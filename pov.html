@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embedded Chatbot with Background</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: url('/mnt/data/image.png') no-repeat center center fixed;
+            background-size: cover;
+        }
+        iframe {
+            border: 1px solid rgba(0, 0, 0, 1);
+            border-radius: 4px;
+            max-width: 700px;
+            width: 100%;
+            height: 500px;
+            transition: 0.3s;
+        }
+        iframe:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.15);
+        }
+    </style>
+</head>
+<body>
+    <iframe 
+        id="embed-preview-iframe" 
+        loading="eager" 
+        src="https://embed.pickaxeproject.com/axe?id=LingoTutor_Chatbot_LMSN4&mode=embed_gold&host=beta&theme=light&opacity=100&font_header=Real+Head+Pro&size_header=30&font_body=Real+Head+Pro&size_body=16&font_labels=Real+Head+Pro&size_labels=14&font_button=Real+Head+Pro&size_button=16&c_fb=FFFFFF&c_ff=FFFFFF&c_fbd=888888&c_rb=FFFFFF&c_bb=228DD7&c_bt=FFFFFF&c_t=000000&s_ffo=100&s_rbo=100&s_bbo=100&s_f=minimalist&s_b=filled&s_t=1&s_to=1&s_r=2" 
+        frameBorder="0">
+    </iframe>
+</body>
+</html>
